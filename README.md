@@ -30,3 +30,30 @@ npm run start
 ```
 
 Vous pouvez maintenant modifier le code source.
+
+### Commandes
+
+Pour créer une commande, ajoutez un fichier dans le dossier `src/commands` qui exporte :
+
+Une fonction `run` qui décrit ce que la commande doit faire lorsqu'elle est utilisée :
+
+```ts
+import { RunCommand } from '../command';
+
+export const run: RunCommand = (message, args, client) => {
+  // Exemple
+  message.channel.send('Test!');
+};
+```
+
+Une constante `meta` qui décrit les propriétés de la commande
+
+```ts
+import { CommandMeta } from '../command';
+
+export const meta: CommandMeta = {
+  // Exemple
+  name: 'test',
+  description: 'Une commande de test',
+};
+```
