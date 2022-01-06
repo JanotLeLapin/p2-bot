@@ -1,0 +1,24 @@
+{
+  "name": "p2-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist",
+    "debug": "nodemon dist",
+    "clean": "rm -r dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.0",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.13",
+    "typescript": "^4.4.4"
+  }
+}
